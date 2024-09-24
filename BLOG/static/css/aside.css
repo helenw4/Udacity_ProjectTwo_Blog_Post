@@ -1,0 +1,170 @@
+aside > .aside-div {
+    margin: 60px 10px 10px 50px;
+    padding: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid black;
+    max-width: 500px;
+}
+
+.aside-div h3 {
+    margin-top: 0; 
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.aside-div p {
+    margin-bottom: 20px;
+    line-height: 1;
+    text-align: justify; 
+}
+
+.aside-div p + a {
+    display: block; 
+    margin: 20px 0; 
+    padding-top: 10px; 
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.aside-div a:hover {
+    text-decoration: underline;
+}
+
+.aside-div a + img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto; 
+    max-width: 400px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  START for medium devices per udacity grader comments between 769px & 1600px   */
+
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+  aside > .aside-div {
+      margin: 40px 20px 20px 30px; /* Adjust margins for better fit */
+      padding: 20px;
+      max-width: 90%; /* Responsive width */
+  }
+
+  .aside-div h3 {
+      font-size: 24px; /* Smaller font size for smaller screens */
+      margin-bottom: 15px;
+  }
+
+  .aside-div p {
+      line-height: 1.5;
+      font-size: 16px; /* Adjust text size */
+  }
+
+  .aside-div p + a {
+      font-size: 18px;
+      margin: 15px 0;
+  }
+
+  .aside-div a + img {
+      max-width: 100%; /* Ensure the image scales with container */
+      margin-top: 15px;
+  }
+
+  /* Further adjustments for screens closer to 769px */
+  @media screen and (max-width: 1000px) {
+      aside > .aside-div {
+          margin: 20px 10px;
+          padding: 15px;
+          max-width: 95%; /* Take up more width on smaller screens */
+      }
+
+      .aside-div h3 {
+          font-size: 22px;
+      }
+
+      .aside-div p {
+          font-size: 14px;
+      }
+
+      .aside-div p + a {
+          font-size: 16px;
+      }
+
+      .aside-div a + img {
+          max-width: 100%; /* Ensure the image scales appropriately */
+      }
+  }
+
+  /* Adjustments for larger screens closer to 1600px */
+  @media screen and (min-width: 1300px) {
+      aside > .aside-div {
+          margin: 50px 40px 20px 60px; /* Increase margins for larger screens */
+          padding: 25px;
+          max-width: 600px; /* More space on larger screens */
+      }
+
+      .aside-div h3 {
+          font-size: 28px;
+      }
+
+      .aside-div p {
+          font-size: 18px;
+      }
+
+      .aside-div p + a {
+          font-size: 20px;
+      }
+
+      .aside-div a + img {
+          max-width: 450px; /* Slightly larger image */
+      }
+  }
+}
+
+
+
+/* For Tablets */
+@media (max-width: 768px) {
+    aside > .aside-div {
+      margin: 40px 10px 10px 20px; /* Reduce margins for tablet screens */
+      padding: 20px;
+      max-width: 100%; 
+    }
+  
+    .aside-div h3 {
+      font-size: 24px; /* Adjust font size for better readability */
+    }
+  
+    .aside-div a + img {
+      max-width: 100%; /* Ensure image is responsive on tablets */
+    }
+  }
+  
+  /* For Mobile */
+  @media (max-width: 480px) {
+    aside > .aside-div {
+      margin: 20px 5px; /* Further reduce margins for mobile */
+      padding: 15px;
+      max-width: 100%; /* Full width on mobile */
+    }
+  
+    .aside-div h3 {
+      font-size: 20px; /* Smaller font for mobile screens */
+    }
+  
+    .aside-div p {
+      line-height: 1.2; /* Adjust line height for mobile readability */
+    }
+  
+    .aside-div a + img {
+      max-width: 100%; /* Ensure the image fits the mobile screen */
+    }
+  }
+  
+  
+
+  

@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#nav-bar{
+    background: linear-gradient(90deg, rgba(36,207,9,1) 0%, rgba(242,242,3,1) 35%, rgba(242,27,5,1) 100%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 45px; 
+    padding-left: 45px;
+}
+
+#nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-logo > a{
+    font-size: 35px;
+    font-weight: bolder;
+    color: red; 
+}
+
+li{
+    list-style: none;
+    display: inline-flex;
+    font-weight: bold;
+
+}
+
+li a {
+    color: red; 
+    font-size: 18px; 
+    margin: 25px; 
+}
+
+.buttonFont{
+    background-color: green;
+    color: antiquewhite;
+    margin-left: 10px; 
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px; 
+}
+
+button > a {
+    color: green; 
+    font-weight: bold; 
+    font-weight: 15px; 
+}
+
+/* START for medium devices per udacity grader comments between 769px & 1600px */
+
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+    #nav-bar {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #nav-logo > a {
+        font-size: 28px;
+    }
+
+    li a {
+        font-size: 16px;
+        margin: 15px;
+    }
+
+    .buttonFont {
+        padding: 8px;
+        width: 75px;
+        margin-left: 5px;
+    }
+
+    #nav-div {
+        flex-direction: row;
+    }
+
+    /* For screens closer to 769px */
+    @media screen and (max-width: 1000px) {
+        #nav-logo > a {
+            font-size: 25px;
+        }
+
+        li a {
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        .buttonFont {
+            padding: 6px;
+            width: 60px;
+        }
+    }
+
+    /* For larger screens closer to 1600px */
+    @media screen and (min-width: 1300px) {
+        #nav-logo > a {
+            font-size: 32px;
+        }
+
+        li a {
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        .buttonFont {
+            padding: 10px;
+            width: 85px;
+        }
+    }
+}
+
+
+
+/* For Tablet */
+@media (max-width: 768px) {
+    #nav-bar {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+  
+    #nav-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    #nav-logo > a {
+        font-size: 28px;
+    }
+  
+    li {
+        display: block;
+        margin-bottom: 15px;
+    }
+  
+    li a {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+  
+    .buttonFont {
+        width: 80px;
+        padding: 8px;
+    }
+  }
+  
+  /* For Mobile */
+  @media (max-width: 480px) {
+    #nav-bar {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+  
+    #nav-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    #nav-logo > a {
+        font-size: 24px;
+    }
+  
+    li {
+        display: block;
+        margin-bottom: 10px;
+    }
+  
+    li a {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+  
+    .buttonFont {
+        width: 70px;
+        padding: 6px;
+    }
+  }

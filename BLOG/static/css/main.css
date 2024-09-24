@@ -1,0 +1,209 @@
+
+
+.grid-containerMain {
+    display: grid;
+    grid-template-areas: "item1 item2 item3"
+      "item4 item5 item6"
+      "item7 item8 item9";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+
+.grid-item1, .grid-item2, .grid-item3,
+.grid-item4, .grid-item5, .grid-item6,
+.grid-item7, .grid-item8, .grid-item9 {
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+.grid-align {
+  padding: 10px;
+}
+  
+  .grid-item1 {
+    grid-area: item1;
+    border: 1px solid black;
+  }
+  
+  .grid-item2 {
+    grid-area: item2;
+    border: 1px solid black;
+  }
+  
+  .grid-item3 {
+    grid-area: item3;
+    border: 1px solid black;
+  }
+  
+  .grid-item4 {
+    grid-area: item4;
+    border: 1px solid black;
+  }
+  
+  .grid-item5 {
+    grid-area: item5;
+    border: 1px solid black;
+  }
+  
+  .grid-item6 {
+    grid-area: item6;
+    border: 1px solid black;
+  }
+  
+  .grid-item7 {
+    grid-area: item7;
+    border: 1px solid black;
+  }
+  
+  .grid-item8 {
+    grid-area: item8;
+    border: 1px solid black;
+  }
+  
+  .grid-item9 {
+    grid-area: item9;
+    border: 1px solid black;
+  }
+  
+  h1{
+    text-align: center;
+    color: rgb(205, 3, 3); 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+  
+  }
+
+  img {
+    width: 325px;
+    height: 225px;
+  }
+  
+  h3 + p {
+    padding: 10px 0;
+
+  }
+
+  h3{
+    padding-top: 10px; 
+  }
+
+  button {
+    background-color: yellow;
+    border-radius: 25px;
+    padding: 10px;
+    color: green;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+/*  START for medium devices per udacity grader comments between 769px & 1600px   */
+
+/* Responsive Styles */
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+  .grid-containerMain {
+      grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+      grid-template-areas: 
+        "item1 item2"
+        "item3 item4"
+        "item5 item6"
+        "item7 item8"
+        "item9";
+      gap: 20px; /* Increase gap for better spacing */
+  }
+
+  /* Further adjustments for screens closer to 769px */
+  @media screen and (max-width: 1000px) {
+      .grid-containerMain {
+          grid-template-columns: 1fr; /* Single column for smaller screens */
+          grid-template-areas: 
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8"
+            "item9";
+          gap: 25px;
+      }
+
+      img {
+          width: 100%; /* Make images responsive */
+          height: auto;
+      }
+
+      button {
+          padding: 12px;
+          font-size: 1rem;
+      }
+  }
+
+  /* Adjust for larger screens closer to 1600px */
+  @media screen and (min-width: 1300px) {
+      .grid-containerMain {
+          grid-template-columns: repeat(3, 1fr); /* Back to 3 columns */
+          grid-template-areas: 
+            "item1 item2 item3"
+            "item4 item5 item6"
+            "item7 item8 item9";
+      }
+
+      img {
+          width: 350px;
+          height: 250px;
+      }
+
+      button {
+          padding: 15px;
+          font-size: 1.1rem;
+      }
+  }
+}
+
+  /*    */
+
+ /* For Tablets */
+@media (max-width: 768px) {
+  .grid-containerMain {
+    grid-template-areas: 
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8"
+      "item9";
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+
+  img {
+    width: 100%;
+    height: auto; /* Adjust image size to fit smaller screens */
+  }
+}
+
+/* For Mobile */
+@media (max-width: 480px) {
+  .grid-containerMain {
+    grid-template-areas: 
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8"
+      "item9";
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+  }
+
+  img {
+    width: 100%;
+    height: auto; /* Full width images */
+  }
+}
+  

@@ -1,0 +1,40 @@
+#footer-container{
+    padding-top: 30px;
+    text-align: center;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+  #footer-container {
+      padding-top: 25px; /* Slightly reduce padding */
+      text-align: left; /* Optional: Change text alignment for wider screens */
+  }
+
+  /* Further adjustments for screens closer to 769px */
+  @media screen and (max-width: 1000px) {
+      #footer-container {
+          padding-top: 20px; /* Reduce padding further for medium screens */
+          text-align: center; /* Keep center alignment for smaller screens */
+      }
+  }
+
+  /* Adjustments for larger screens closer to 1600px */
+  @media screen and (min-width: 1300px) {
+      #footer-container {
+          padding-top: 35px; /* Increase padding for larger screens */
+          text-align: center; /* You can keep or change this based on layout */
+      }
+  }
+}
+
+
+@media (max-width: 768px) {
+    #footer-container {
+      padding-top: 15px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #footer-container {
+      padding-top: 10px;
+    }
+  }

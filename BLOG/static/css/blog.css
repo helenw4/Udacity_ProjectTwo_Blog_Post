@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(53, 46, 46); 
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    background-color: bisque;
+    color: rgb(75, 67, 67);
+  
+}
+
+.blog-pageHeader {
+    width: 100%;
+    background-color: bisque;
+    padding: 10px 0; 
+}
+
+.blogNav {
+    display: flex;
+    justify-content: space-between; /* PAY ATTENTION HERE NEXT TIME!!! -- Align the HOME link and the nav links */
+    align-items: center;
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.blogNav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: red;
+}
+
+.blog-navLinks {
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+    padding: 0;
+    margin: 0;
+}
+
+.blog-navLinks li {
+    display: inline; /* will make the list items are inline */
+}
+
+.blog-navLinks a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+h1{
+    margin: 50px auto; 
+    text-align: center;
+    color: green; 
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    height: 500px; 
+    width: 900px; 
+
+}
+
+figcaption{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p{
+    padding: 30px;
+    margin: 50px;
+}
+
+.aboutWriter {
+    max-width: 800px; /* Set a maximum width for the section */
+    margin: 0 auto; /* Center the section horizontally */
+    font-family: Arial, sans-serif;
+    text-align: left; /* for text inside remains left-aligned */
+    border: 1px solid black;
+    padding: 25px;
+
+}
+
+.aboutWriter h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: green;
+    text-decoration: underline;
+}
+
+.authorImg {
+    overflow: hidden; /* to clear floats inside the container */
+}
+
+.hIMG {
+    float: left; 
+    margin-right: 70px; /* Add some space between the image and the text */
+    width: 250px; 
+    height: 350px;
+    border-radius: 15px;
+}
+
+.authorBlurb {
+    line-height: 1.1;
+    font-size: 16px;
+    color: rgb(55, 50, 50);
+    width: 80%;
+    height: auto;
+}
+
+#footerSection {
+    margin: 50px 0;
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+
+.footerNavSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the links wrap on smaller screens */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    justify-content: center; /* Center the links */
+}
+
+.footer-links li {
+    margin: 0 15px; 
+}
+
+.footer-links a {
+    text-decoration: none; 
+    font-size: 18px;
+    color: #333; 
+    font-family: Arial, sans-serif;
+    padding: 8px 12px; /* Add padding for a larger click area */
+    cursor: pointer;
+   
+}
+
+/*  START OF MOBILE AND TABLET RESPONSIVENESS */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 20px auto;
+    }
+
+    .aboutWriter {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .hIMG {
+        width: 200px;
+        height: 300px;
+        margin-right: 40px;
+    }
+
+    p {
+        padding: 20px;
+        margin: 30px;
+    }
+
+    .footer-links li {
+        margin: 0 10px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Make navigation column layout */
+    .blogNav {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    /* Make navigation links stack vertically */
+    .blog-navLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    /* Images should adjust to 100% width */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* About Writer section */
+    .aboutWriter {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .hIMG {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 150px;
+        height: 200px;
+    }
+
+    p {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    /* Footer links should stack vertically */
+    .footerNavSocial {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links li {
+        margin: 10px 0;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+
+/* END OF MOBILE AND TABLET RESPONSIVENESS */
